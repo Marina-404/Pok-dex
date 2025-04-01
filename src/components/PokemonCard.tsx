@@ -15,7 +15,7 @@ function PokemonCard() {
         <div>
             <h2>{pokemon.name}</h2>
             {pokemon.imgSrc ? (
-            <img src= {pokemon.imgSrc} alt={'image de ${pokemon.name}'} 
+            <img src= {pokemon.imgSrc} alt={`image de ${pokemon.name}`} 
             /> 
             ) : (
                 <p>???</p>
