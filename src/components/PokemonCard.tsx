@@ -1,11 +1,12 @@
 
-interface Pokemon {
+type Pokemon = {
     name: string;
     imgSrc?: string;
 }
 
 
 function PokemonCard({ pokemon }: {pokemon: Pokemon}) {
+
     return (
         <div>
             <h2>{pokemon.name}</h2>
