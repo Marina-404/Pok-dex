@@ -8,14 +8,14 @@ type Pokemon = {
 function PokemonCard({ pokemon }: {pokemon: Pokemon}) {
 
     return (
-        <div>
-            <h2>{pokemon.name}</h2>
+        <div className="card-pokemon">
             {pokemon.imgSrc ? (
-            <img src= {pokemon.imgSrc} alt={`image de ${pokemon.name}`} 
+            <img className="color-img"src= {pokemon.imgSrc} alt={`image de ${pokemon.name}`} 
             /> 
             ) : (
-                <p>???</p>
-            )} 
+                <p>no image</p>
+            )}   
+            <h2>{pokemon.name}</h2>
         </div>
     );
   }
