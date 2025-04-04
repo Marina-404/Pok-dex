@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import NavBar  from "./components/Navbar.tsx";
 import PokemonCard from "./components/PokemonCard.tsx";
 
@@ -33,6 +34,10 @@ const pokemonList = [
 ];
 
 function App() {
+  useEffect(() => {   
+        alert("hello pokemon trainer :)")
+      },[]
+  );
 
   const [pokemonName, setPokemonName] = useState("Bulbasaur");
 
